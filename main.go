@@ -1,9 +1,10 @@
 package main
 
 import (
-	"fmt"
     "github.com/gin-gonic/gin"
+	"github.com/Interview-GPT/user-auth-service/controllers"
 	"github.com/Interview-GPT/user-auth-service/initializers"
+
 )
 
 func init() {
@@ -13,12 +14,7 @@ func init() {
 }
 
 func main(){
-	fmt.Println("Hello, world!")
 	r := gin.Default()
-	r.GET("/ping", func(c *gin.Context) {
-		c.JSON(200, gin.H{
-			"message": "pong",
-		})
-	})
+	r.POST("/signup", controllers.Signup)
 	r.Run() // listen and serve on 0.0.0.0:8080
 }
