@@ -11,7 +11,6 @@ func init() {
 	initializers.ConnectToDB()
 }
 
-
 func main(){
 	fmt.Println("Hello, world!")
 	r := gin.Default()
