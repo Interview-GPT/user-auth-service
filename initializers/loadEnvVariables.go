@@ -5,7 +5,7 @@ import (
     "github.com/joho/godotenv"
 )
 
-//set up your own .env variables or ask owner for variables necessary for this service to work
+//set up your own .env variables or ask owner for access to variables necessary for this service to work
 
 func LoadEnvVariables(){
     
